@@ -1,10 +1,13 @@
 {
+  "homepage": "https://Sahil0128.github.io/youtube-clone",
   "name": "youtube-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npx run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
